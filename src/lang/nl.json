@@ -5,5 +5,14 @@
   "subtitle": "1. Eigen baas",
   "app.text2": "Als vrije werker ben je een freelancer (zonder inschrijving bij de KvK).",
   "app.text3": "Je bepaalt dus zelf welke klussen je aanneemt!",
-  "app.button": "Verder"
+  "app.button": "Verder",
+
+  "Stap2_app.title": "Hello",
+  "Stap2_app.text1": "Test Nederlands 1",
+  "Stap2_subtitle": "Test Nederlands 2",
+  "Stap2_app.text2": "Test Nederlands 3",
+  "Stap2_app.text3": "Test Nederlands 4",
+  "Stap2_app.text4": "Test Nederlands 6",
+  "Stap2_app.text5": "Test Nederlands 7",
+  "Stap2_app.button": "Next Nederlands"
 }

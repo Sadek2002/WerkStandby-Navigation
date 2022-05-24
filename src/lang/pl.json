@@ -5,5 +5,14 @@
   "subtitle": "1. Sed eu egestas",
   "app.text2": "bibendum tellus  tortor at hendrerit elementum.(metus metus maximus).",
   "app.text3": "Fusce vulputate purus!",
-  "app.button": "Posuera"
+  "app.button": "Posuera",
+
+  "Stap2_app.title": "Hello Polskie 1",
+  "Stap2_app.text1": "Test Polskie 2",
+  "Stap2_subtitle": "Test Polskie 3",
+  "Stap2_app.text2": "Test Polskie 4",
+  "Stap2_app.text3": "Test Polskie 5",
+  "Stap2_app.text4": "Test Polskie 6",
+  "Stap2_app.text5": "Test Polskie 7",
+  "Stap2_app.button": "Next Polskie "
 }

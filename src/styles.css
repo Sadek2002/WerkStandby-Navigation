@@ -16,6 +16,7 @@ body {
   width: 1100px;
   height: auto;
   box-shadow: 0 0 10px gray;
+  padding-bottom: 30px;
 }
 
 .whiteBoxTitle {
@@ -28,6 +29,7 @@ body {
 .whiteBoxSubtitle {
   font-size: 28px;
   margin-left: 40%;
+  display: flex;
 }
 
 .whiteBoxText {
@@ -37,7 +39,7 @@ body {
 
 .whiteBoxText2 {
   font-size: 20px;
-  margin-left: 40%;
+  display: flex;
 }
 
 .whiteBoxCyanText {
@@ -46,24 +48,37 @@ body {
   text-align: center;
 }
 
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
 .image-css {
   width: 300px;
   height: 300px;
-  float: left;
   margin: auto auto 30px 30px;
+  display: inline;
+}
+
+.flexButton {
+  display: flex;
 }
 
 .whiteBoxButton {
   background-color: #00cc8b;
   border: none;
-  font-size: 20px;
-  width: 100px;
+  width: auto;
   height: 40px;
+  margin: 0px 30px 0px auto;
+  padding: 10px 25px 25px 25px;
+  align-self: flex-end;
+}
+
+.whiteBoxButton a {
+  text-decoration: none;
   color: white;
-  margin-top: 100px;
-  margin-left: 640px;
-  display: inline-block;
-  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .whiteBoxButton:hover {
@@ -80,4 +95,5 @@ body {
 
 .dropdown:hover {
   cursor: pointer;
+  background-color: #56d1b9;
 }

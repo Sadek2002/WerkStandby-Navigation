@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Stap1 from "./components/Stap1";
-import Stap2 from "./components/Stap2";
+import Stap1 from "../pages/Stap1";
+import Stap2 from "../pages/Stap2";
 
 function App() {
   return (
