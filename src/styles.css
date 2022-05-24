@@ -1,0 +1,83 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/* App.js CSS */
+
+.whiteBox {
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  background-color: white;
+  width: 1100px;
+  height: auto;
+  box-shadow: 0 0 10px gray;
+}
+
+.whiteBoxTitle {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.whiteBoxSubtitle {
+  font-size: 28px;
+  margin-left: 40%;
+}
+
+.whiteBoxText {
+  font-size: 20px;
+  text-align: center;
+}
+
+.whiteBoxText2 {
+  font-size: 20px;
+  margin-left: 40%;
+}
+
+.whiteBoxCyanText {
+  font-size: 20px;
+  color: #56d1b9;
+  text-align: center;
+}
+
+.image-css {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: auto auto 30px 30px;
+}
+
+.whiteBoxButton {
+  background-color: #00cc8b;
+  border: none;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  margin-top: 100px;
+  margin-left: 640px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.whiteBoxButton:hover {
+  background-color: #56d1b9;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: right;
+  font-size: 20px;
+  color: white;
+  background-color: #29cb8b;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
