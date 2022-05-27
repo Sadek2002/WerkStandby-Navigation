@@ -6,16 +6,16 @@ body {
   background-color: white;
 }
 
-/* App.js CSS */
+/* Stap1.js CSS */
 
 .whiteBox {
-  margin: 0 auto;
-  display: block;
+  display: inline-block;
   height: auto;
   background-color: white;
-  width: 1100px;
-  height: auto;
-  box-shadow: 0 0 10px gray;
+  width: 1400px;
+  box-shadow: 0 0 10px grey;
+  margin-left: 50px;
+  margin-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -26,20 +26,17 @@ body {
   padding-top: 30px;
 }
 
-.whiteBoxSubtitle {
-  font-size: 28px;
-  margin-left: 40%;
-  display: flex;
-}
-
 .whiteBoxText {
   font-size: 20px;
   text-align: center;
 }
 
+.whiteBoxSubtitle {
+  font-size: 28px;
+}
+
 .whiteBoxText2 {
   font-size: 20px;
-  display: flex;
 }
 
 .whiteBoxCyanText {
@@ -48,16 +45,13 @@ body {
   text-align: center;
 }
 
-.wrapper {
-  display: flex;
-  width: 100%;
-}
-
 .image-css {
-  width: 300px;
-  height: 300px;
+  width: 22%;
+  height: auto;
   margin: auto auto 30px 30px;
-  display: inline;
+  display: inline-block;
+  float: left;
+  margin: 10px 200px 10px 175px;
 }
 
 .flexButton {
@@ -69,9 +63,10 @@ body {
   border: none;
   width: auto;
   height: 40px;
-  margin: 0px 30px 0px auto;
-  padding: 10px 25px 25px 25px;
+  margin: 0px 50px 30px auto;
+  padding: 15px 40px 40px 40px;
   align-self: flex-end;
+  display: inline-block;
 }
 
 .whiteBoxButton a {
@@ -96,4 +91,27 @@ body {
 .dropdown:hover {
   cursor: pointer;
   background-color: #56d1b9;
+}
+
+.wrapper,
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* ProgressBar CSS */
+.progressBar {
+  text-align: center;
+  background-color: #f8f8f8;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 25px;
+  width: 1300px;
 }

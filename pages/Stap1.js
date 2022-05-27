@@ -49,61 +49,62 @@ function Stap1() {
           />
         </p>
 
+        <div>
+          <img class="image-css" alt="test" src={logo}></img>
+        </div>
+
         <div className="wrapper">
-          <div>
-            <img class="image-css" alt="test" src={logo}></img>
-          </div>
+          <p className="whiteBoxSubtitle">
+            <FormattedMessage
+              defaultMessage="1. Eigen baas"
+              id="subtitle"
+              values={{
+                fileName: "src/App.js",
+                code: (word) => <strong>{word}</strong>
+              }}
+            />
+          </p>
 
-          <div className="flexbox">
-            <p className="whiteBoxSubtitle">
-              <FormattedMessage
-                defaultMessage="1. Eigen baas"
-                id="subtitle"
-                values={{
-                  fileName: "src/App.js",
-                  code: (word) => <strong>{word}</strong>
-                }}
-              />
-            </p>
-
-            <p className="whiteBoxText2">
-              <FormattedMessage
-                defaultMessage="Als vrije werker ben je een freelancer (zonder inschrijving bij de
+          <p className="whiteBoxText2">
+            <FormattedMessage
+              defaultMessage="Als vrije werker ben je een freelancer (zonder inschrijving bij de
               KvK)."
-                id="app.text2"
-                values={{
-                  fileName: "src/App.js",
-                  code: (word) => <strong>{word}</strong>
-                }}
-              />
-            </p>
+              id="app.text2"
+              values={{
+                fileName: "src/App.js",
+                code: (word) => <strong>{word}</strong>
+              }}
+            />
+          </p>
 
-            <p className="whiteBoxText2">
+          <p className="whiteBoxText2">
+            <FormattedMessage
+              defaultMessage="Je bepaalt dus zelf welke klussen je aanneemt!"
+              id="app.text3"
+              values={{
+                fileName: "src/App.js",
+                code: (word) => <strong>{word}</strong>
+              }}
+            />
+          </p>
+        </div>
+
+        <div className="flexButton">
+          <button className="whiteBoxButton">
+            <Link to="/Stap2">
               <FormattedMessage
-                defaultMessage="Je bepaalt dus zelf welke klussen je aanneemt!"
-                id="app.text3"
+                defaultMessage="Verder ᐅ"
+                id="app.button"
                 values={{
                   fileName: "src/App.js",
                   code: (word) => <strong>{word}</strong>
                 }}
               />
-            </p>
-          </div>
-
-          <div className="flexButton">
-            <button className="whiteBoxButton">
-              <Link to="/Stap2">
-                <FormattedMessage
-                  defaultMessage="Verder"
-                  id="app.button"
-                  values={{
-                    fileName: "src/App.js",
-                    code: (word) => <strong>{word}</strong>
-                  }}
-                />
-              </Link>
-            </button>
-          </div>
+            </Link>
+          </button>
+        </div>
+        <div className="progressBar">
+          <div>Work in progress</div>
         </div>
       </div>
     </nav>

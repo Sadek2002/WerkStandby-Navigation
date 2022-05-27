@@ -38,11 +38,11 @@ function Stap2() {
           />
         </p>
 
-        <div className="wrapper">
-          <div>
-            <img class="image-css" alt="test" src={logo}></img>
-          </div>
+        <div>
+          <img class="image-css" alt="test" src={logo}></img>
+        </div>
 
+        <div className="wrapper">
           <p className="whiteBoxSubtitle">
             <FormattedMessage
               defaultMessage="2. Vergoeding"
@@ -97,21 +97,21 @@ function Stap2() {
               }}
             />
           </p>
+        </div>
 
-          <div className="flexButton">
-            <button className="whiteBoxButton">
-              <Link to="/Stap2">
-                <FormattedMessage
-                  defaultMessage="Verder"
-                  id="Stap2_app.button"
-                  values={{
-                    fileName: "src/App.js",
-                    code: (word) => <strong>{word}</strong>
-                  }}
-                />
-              </Link>
-            </button>
-          </div>
+        <div className="flexButton">
+          <button className="whiteBoxButton">
+            <Link to="/Stap2">
+              <FormattedMessage
+                defaultMessage="Verder"
+                id="Stap2_app.button"
+                values={{
+                  fileName: "src/App.js",
+                  code: (word) => <strong>{word}</strong>
+                }}
+              />
+            </Link>
+          </button>
         </div>
       </div>
     </nav>
