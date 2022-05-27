@@ -113,6 +113,9 @@ function Stap2() {
             </Link>
           </button>
         </div>
+        <div className="progressBar">
+          <div>Work in progress</div>
+        </div>
       </div>
     </nav>
   );

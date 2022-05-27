@@ -93,7 +93,7 @@ function Stap1() {
           <button className="whiteBoxButton">
             <Link to="/Stap2">
               <FormattedMessage
-                defaultMessage="Verder ᐅ"
+                defaultMessage="Verder"
                 id="app.button"
                 values={{
                   fileName: "src/App.js",
@@ -103,9 +103,7 @@ function Stap1() {
             </Link>
           </button>
         </div>
-        <div className="progressBar">
-          <div>Work in progress</div>
-        </div>
+        <div className="progressBar">Test</div>
       </div>
     </nav>
   );

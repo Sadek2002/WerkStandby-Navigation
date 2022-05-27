@@ -24,22 +24,27 @@ body {
   font-weight: bold;
   text-align: center;
   padding-top: 30px;
+  margin: 16px;
 }
 
 .whiteBoxText {
   font-size: 20px;
+  margin: 16px;
   text-align: center;
 }
 
 .whiteBoxSubtitle {
+  margin: 16px;
   font-size: 28px;
 }
 
 .whiteBoxText2 {
+  margin: 16px;
   font-size: 20px;
 }
 
 .whiteBoxCyanText {
+  margin: 16px;
   font-size: 20px;
   color: #56d1b9;
   text-align: center;
@@ -108,6 +113,7 @@ body {
 
 /* ProgressBar CSS */
 .progressBar {
+  display: inline-block;
   text-align: center;
   background-color: #f8f8f8;
   margin-left: 50px;
