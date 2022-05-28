@@ -1,11 +1,11 @@
 import "../src/styles.css";
 import React from "react";
-import logo from "/img/stap2.png";
+import logo from "/img/stap3.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Dropdown from "../src/components/Dropdown";
 
-function Stap2() {
+function Stap3() {
   return (
     <nav className="container mb-4 mt-4">
       <div className="whiteBox">
@@ -45,7 +45,7 @@ function Stap2() {
         <div className="wrapper">
           <p className="whiteBoxSubtitle">
             <FormattedMessage
-              defaultMessage="2. Vergoeding"
+              defaultMessage="3. Uitbetaling"
               id="Stap2_subtitle"
               values={{
                 fileName: "src/App.js",
@@ -56,7 +56,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Wanneer je werkt ontvang je een vergoeding: dit is dus geen salaris of loon."
+              defaultMessage="Je krijgt wekelijks uitbetaald"
               id="Stap2_app.text2"
               values={{
                 fileName: "src/App.js",
@@ -67,7 +67,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Wanneer je ziek bent krijg je niet doorbetaald."
+              defaultMessage="Jouw betaling is bruto: hiervoor moet je dus nog belasting betalen!"
               id="Stap2_app.text3"
               values={{
                 fileName: "src/App.js",
@@ -78,7 +78,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Ook wanneer het werk eerder stopt dan ingeplant, krijg je alleen de gewerkte uren uitbetaald."
+              defaultMessage="Hoeveel belasting je moet betalen hangt af van jouw totale inkomen per jaar."
               id="Stap2_app.text4"
               values={{
                 fileName: "src/App.js",
@@ -89,7 +89,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="De vergoeding is altijd hoger dan de minimumloon"
+              defaultMessage="Verwacht je in totaal meer dan 6500 euro per jaar te verdienen? Dan adviseren wij jou om 10% van je vergoeding apart te zetten."
               id="Stap2_app.text5"
               values={{
                 fileName: "src/App.js",
@@ -101,10 +101,10 @@ function Stap2() {
 
         <div className="flexButton">
           <button className="whiteBoxButtonBack">
-            <Link to="/Stap1">
+            <Link to="/Stap2">
               <FormattedMessage
                 defaultMessage="Terug"
-                id="Stap1_app.button"
+                id="Stap2_app.button"
                 values={{
                   fileName: "src/App.js",
                   code: (word) => <strong>{word}</strong>
@@ -115,10 +115,10 @@ function Stap2() {
 
           <div className="flexButton">
             <button className="whiteBoxButton">
-              <Link to="/Stap3">
+              <Link to="/Stap4">
                 <FormattedMessage
                   defaultMessage="Verder"
-                  id="Stap3_app.button"
+                  id="Stap4_app.button"
                   values={{
                     fileName: "src/App.js",
                     code: (word) => <strong>{word}</strong>
@@ -136,4 +136,4 @@ function Stap2() {
   );
 }
 
-export default Stap2;
+export default Stap3;
