@@ -89,6 +89,8 @@ function Stap1() {
           </p>
         </div>
 
+        <div className="emptyMargin"></div>
+
         <div className="flexButton">
           <button className="whiteBoxButton">
             <Link to="/Stap2">

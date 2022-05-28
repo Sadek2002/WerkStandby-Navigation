@@ -85,7 +85,6 @@ function Stap5() {
               }}
             />
           </p>
-
           <div className="emptyMargin"></div>
         </div>
 

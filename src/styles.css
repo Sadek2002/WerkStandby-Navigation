@@ -69,9 +69,8 @@ body {
   background-color: #00cc8b;
   border: none;
   width: auto;
-  height: 40px;
+  height: 60px;
   margin: 0px 50px 30px auto;
-  padding: 15px 40px 40px 40px;
   align-self: flex-end;
   display: inline-block;
   position: relative;
@@ -83,6 +82,7 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
+  padding: 15px 40px 40px 40px;
 }
 
 .whiteBoxButton:hover {
@@ -93,10 +93,9 @@ body {
 .whiteBoxButtonBack {
   background-color: white;
   border: 1px solid gray;
-  height: 40px;
-  padding: 15px 40px 40px 40px;
+  height: 60px;
   float: left;
-  margin-right: 73%;
+  margin-right: 71%;
   margin-left: 4%;
   margin-top: 50px;
 }
@@ -106,6 +105,7 @@ body {
   color: black;
   font-size: 20px;
   text-align: center;
+  padding: 15px 40px 40px 40px;
 }
 
 .whiteBoxButtonBack:hover {
