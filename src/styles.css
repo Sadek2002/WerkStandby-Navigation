@@ -137,6 +137,7 @@ body {
   flex-direction: column;
   width: 50%;
   margin-bottom: 10px;
+  min-height: 310px;
 }
 
 .emptyMargin {
