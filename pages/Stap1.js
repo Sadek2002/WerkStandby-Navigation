@@ -90,9 +90,8 @@ function Stap1() {
         </div>
 
         <div className="emptyMargin"></div>
-
         <div className="flexButton">
-          <button className="whiteBoxButton">
+          <button className="whiteBoxButton" id="Button" onclick="myFunction()">
             <Link to="/Stap2">
               <FormattedMessage
                 defaultMessage="Verder"
@@ -110,5 +109,4 @@ function Stap1() {
     </nav>
   );
 }
-
 export default Stap1;
