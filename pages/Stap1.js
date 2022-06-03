@@ -91,7 +91,8 @@ function Stap1() {
 
         <div className="emptyMargin"></div>
         <div className="flexButton">
-          <button className="whiteBoxButton" id="Button" onclick="myFunction()">
+          <div id="box">Box</div>
+          <button className="whiteBoxButton" id="Button">
             <Link to="/Stap2">
               <FormattedMessage
                 defaultMessage="Verder"
@@ -104,8 +105,9 @@ function Stap1() {
             </Link>
           </button>
         </div>
-        <div className="progressBar">Test</div>
+        <div className="progressBar"></div>
       </div>
+      <script src="Delay.js" />
     </nav>
   );
 }
