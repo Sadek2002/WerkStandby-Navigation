@@ -152,6 +152,7 @@ body {
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 25px;
+  height: 14px;
   width: 1300px;
 }
 
@@ -161,9 +162,9 @@ body {
   border-radius: 25px;
   align-items: center;
   justify-content: center;
-  opacity: 0;
   height: 100%;
-  width: 0;
+  opacity: 1;
+  width: 30%;
 }
 
 .box {
