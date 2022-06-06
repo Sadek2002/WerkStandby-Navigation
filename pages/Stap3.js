@@ -4,6 +4,7 @@ import logo from "/img/stap3.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Dropdown from "../src/components/Dropdown";
+import Delay from "../src/components/Delay";
 
 function Stap3() {
   return (
@@ -113,21 +114,25 @@ function Stap3() {
             </Link>
           </button>
 
-          <div className="flexButton">
-            <button className="whiteBoxButton">
-              <Link to="/Stap4">
-                <FormattedMessage
-                  defaultMessage="Verder"
-                  id="Stap4_app.button"
-                  values={{
-                    fileName: "src/App.js",
-                    code: (word) => <strong>{word}</strong>
-                  }}
-                />
-              </Link>
-            </button>
+          <div class="box">
+            <div className="flexButton">
+              <Delay />
+              <button className="whiteBoxButton">
+                <Link to="/Stap4">
+                  <FormattedMessage
+                    defaultMessage="Verder"
+                    id="Stap4_app.button"
+                    values={{
+                      fileName: "src/App.js",
+                      code: (word) => <strong>{word}</strong>
+                    }}
+                  />
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
+
         <div className="progressBar">
           <div>Work in progress</div>
         </div>

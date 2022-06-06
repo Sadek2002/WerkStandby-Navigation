@@ -145,7 +145,7 @@ body {
 }
 
 /* ProgressBar CSS */
-.progressBar {
+.progress {
   display: inline-block;
   text-align: center;
   background-color: #f8f8f8;
@@ -153,4 +153,19 @@ body {
   margin-right: 50px;
   border-radius: 25px;
   width: 1300px;
+}
+
+.progress-done {
+  background-color: #228df1;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  height: 100%;
+  width: 0;
+}
+
+.box {
+  visibility: hidden;
 }
