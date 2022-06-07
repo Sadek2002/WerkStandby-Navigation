@@ -1,17 +1,14 @@
 function Progression(datadone) {
-  const progress = document.querySelector(".progress-done");
+  var barwidth = datadone["barwidth"];
+  console.log(barwidth);
 
-  // const setwidth = progress.getAttribute("data-done");
-  console.log(progress);
-
-  setTimeout(() => {
-    progress.style.width = datadone + "%";
-  }, 5000);
+  if (barwidth === undefined) {
+    barwidth = "100%";
+  }
 
   return (
     <div class="progress">
-      <div class="progress-done"></div>
-      <Progression datadone="10" />
+      <div class="progress-done" style={{ width: barwidth }}></div>
     </div>
   );
 }

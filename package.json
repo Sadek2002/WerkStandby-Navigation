@@ -8,9 +8,9 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "progressbar": "1.3.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-images-uploading": "3.1.6",
     "react-intl": "5.25.1",
     "react-router-dom": "6.3.0",
     "react-scripts": "4.0.0"

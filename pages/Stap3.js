@@ -5,6 +5,7 @@ import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Dropdown from "../src/components/Dropdown";
 import Delay from "../src/components/Delay";
+import Progression from "../src/components/Progressbar";
 
 function Stap3() {
   return (
@@ -104,7 +105,7 @@ function Stap3() {
           <button className="whiteBoxButtonBack">
             <Link to="/Stap2">
               <FormattedMessage
-                defaultMessage="Terug"
+                defaultMessage="◀&nbsp;&nbsp;&nbsp;Terug"
                 id="Stap2_app.button"
                 values={{
                   fileName: "src/App.js",
@@ -120,7 +121,7 @@ function Stap3() {
               <button className="whiteBoxButton">
                 <Link to="/Stap4">
                   <FormattedMessage
-                    defaultMessage="Verder"
+                    defaultMessage="Verder&nbsp;&nbsp;&nbsp;▶"
                     id="Stap4_app.button"
                     values={{
                       fileName: "src/App.js",
@@ -133,9 +134,7 @@ function Stap3() {
           </div>
         </div>
 
-        <div className="progressBar">
-          <div>Work in progress</div>
-        </div>
+        <Progression barwidth="28%" />
       </div>
     </nav>
   );

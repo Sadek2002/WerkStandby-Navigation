@@ -105,7 +105,7 @@ function Stap2() {
           <button className="whiteBoxButtonBack">
             <Link to="/Stap1">
               <FormattedMessage
-                defaultMessage="Terug"
+                defaultMessage="◀&nbsp;&nbsp;&nbsp;Terug"
                 id="Stap1_app.button"
                 values={{
                   fileName: "src/App.js",
@@ -121,7 +121,7 @@ function Stap2() {
               <button className="whiteBoxButton">
                 <Link to="/Stap3">
                   <FormattedMessage
-                    defaultMessage="Verder"
+                    defaultMessage="Verder&nbsp;&nbsp;&nbsp;▶"
                     id="Stap3_app.button"
                     values={{
                       fileName: "src/App.js",
@@ -134,7 +134,7 @@ function Stap2() {
           </div>
         </div>
 
-        <Progression datadone="50" />
+        <Progression barwidth="14%" />
       </div>
     </nav>
   );

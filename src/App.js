@@ -9,6 +9,7 @@ import Stap5 from "../pages/Stap5";
 import Stap6 from "../pages/Stap6";
 import Stap7 from "../pages/Stap7";
 import Stap8 from "../pages/Stap8";
+import Upload from "../pages/Upload";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Stap6" element={<Stap6 />} />
         <Route path="/Stap7" element={<Stap7 />} />
         <Route path="/Stap8" element={<Stap8 />} />
+        <Route path="/Upload" element={<Upload />} />
       </Routes>
     </div>
   );
