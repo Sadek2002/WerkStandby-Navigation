@@ -42,91 +42,94 @@ function Upload() {
                 <div className="col-2"></div>
               </div>
 
-              <div className="wrapper">
-                <p className="whiteBoxTitle">
-                  <FormattedMessage
-                    defaultMessage="Verifeer je identiteit"
-                    id="Stap2_app.title"
-                    values={{
-                      fileName: "src/App.js",
-                      code: (word) => <strong>{word}</strong>
-                    }}
-                  />
-                </p>
+              <p className="whiteBoxTitle">
+                <FormattedMessage
+                  defaultMessage="Verifeer je identiteit"
+                  id="Stap2_app.title"
+                  values={{
+                    fileName: "src/App.js",
+                    code: (word) => <strong>{word}</strong>
+                  }}
+                />
+              </p>
 
-                <br></br>
+              <br></br>
 
-                <p className="whiteBoxText2 {">
-                  <FormattedMessage
-                    defaultMessage="Om als vrije werker aan de slag te kunnen moet een Europese identiteitskaart of paspoort hebben. Deze moet je uploaden zodat wij deze kunnen controleren."
-                    id="Stap2_app.title"
-                    values={{
-                      fileName: "src/App.js",
-                      code: (word) => <strong>{word}</strong>
-                    }}
-                  />
-                </p>
+              <p className="uploadText">
+                <FormattedMessage
+                  defaultMessage="Om als vrije werker aan de slag te kunnen moet een Europese identiteitskaart of paspoort hebben. Deze moet je uploaden zodat wij deze kunnen controleren."
+                  id="Stap2_app.title"
+                  values={{
+                    fileName: "src/App.js",
+                    code: (word) => <strong>{word}</strong>
+                  }}
+                />
+              </p>
 
-                <br></br>
+              <br></br>
 
-                <p className="whiteBoxText2 {">
-                  <FormattedMessage
-                    defaultMessage="Wat is je nationaliteit?"
-                    id="Stap2_app.title"
-                    values={{
-                      fileName: "src/App.js",
-                      code: (word) => <strong>{word}</strong>
-                    }}
-                  />
-                </p>
-                <select
-                  name="nationality"
-                  id="nationality"
-                  defaultMessage="Kies een land"
-                >
-                  <option value="Nederlands">Nederlands</option>
-                  <option value="Polskie">Polskie</option>
-                  <option value="Ukrayina">Ukrayina</option>
-                </select>
+              <p className="uploadText">
+                <FormattedMessage
+                  defaultMessage="Wat is je nationaliteit?"
+                  id="Stap2_app.title"
+                  values={{
+                    fileName: "src/App.js",
+                    code: (word) => <strong>{word}</strong>
+                  }}
+                />
+              </p>
+              <select
+                name="nationality"
+                id="nationality"
+                defaultMessage="Kies een land"
+              >
+                <option value="Nederlands">Nederlands</option>
+                <option value="Polskie">Polskie</option>
+                <option value="Ukrayina">Ukrayina</option>
+              </select>
 
-                <br></br>
-                <br></br>
+              <br></br>
+              <br></br>
 
-                <button onClick={onImageUpload} {...dragProps}>
-                  Klik om je identiteitsbewijs te uploaden
+              <button
+                className="identityButton"
+                onClick={onImageUpload}
+                {...dragProps}
+              >
+                Klik om je identiteitsbewijs te uploaden
+              </button>
+
+              <div className="flexButton">
+                <button className="whiteBoxButtonBack">
+                  <Link to="/Stap3">
+                    <FormattedMessage
+                      defaultMessage="◀&nbsp;&nbsp;&nbsp;Terug"
+                      id="Stap3_app.button"
+                      values={{
+                        fileName: "src/App.js",
+                        code: (word) => <strong>{word}</strong>
+                      }}
+                    />
+                  </Link>
                 </button>
 
-                <div className="flexButton">
-                  <button className="whiteBoxButtonBack">
-                    <Link to="/Stap3">
-                      <FormattedMessage
-                        defaultMessage="◀&nbsp;&nbsp;&nbsp;Terug"
-                        id="Stap3_app.button"
-                        values={{
-                          fileName: "src/App.js",
-                          code: (word) => <strong>{word}</strong>
-                        }}
-                      />
-                    </Link>
-                  </button>
+                <div class="box">
+                  <div className="flexButton">
+                    <Delay />
+                    <button className="whiteBoxButton">
+                      <Link to="/Stap5">
+                        <FormattedMessage
+                          defaultMessage="Verder&nbsp;&nbsp;&nbsp;▶"
+                          id="Stap5_app.button"
+                          values={{
+                            fileName: "src/App.js",
+                            code: (word) => <strong>{word}</strong>
+                          }}
+                        />
+                      </Link>
+                    </button>
 
-                  <div class="box">
-                    <div className="flexButton">
-                      <Delay />
-                      <button className="whiteBoxButton">
-                        <Link to="/Stap5">
-                          <FormattedMessage
-                            defaultMessage="Verder&nbsp;&nbsp;&nbsp;▶"
-                            id="Stap5_app.button"
-                            values={{
-                              fileName: "src/App.js",
-                              code: (word) => <strong>{word}</strong>
-                            }}
-                          />
-                        </Link>
-                      </button>
-
-                      {/* <div className="upload_image_wrapper">
+                    {/* <div className="upload_image_wrapper">
                         <button onClick={onImageRemoveAll}>
                           Remove all images
                         </button>
@@ -144,11 +147,10 @@ function Upload() {
                           </div>
                         ))}
                       </div> */}
-                    </div>
                   </div>
                 </div>
-                <Progression />
               </div>
+              <Progression />
             </div>
           </nav>
         )}
