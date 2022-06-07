@@ -7,7 +7,7 @@ function Delay() {
 
     // 👇️ hides element (still takes up space on page)
     // box.style.visibility = 'hidden';
-  }, 10000); // 👈️ time in milliseconds
+  }, 100); // 👈️ time in milliseconds
 }
 
 export default Delay;

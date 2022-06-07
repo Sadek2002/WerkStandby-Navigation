@@ -110,10 +110,7 @@ function Stap1() {
           </div>
         </div>
 
-        <div class="progress">
-          <div class="progress-done" data-done="70"></div>
-          <Progression />
-        </div>
+        <Progression datadone="50" />
       </div>
     </nav>
   );

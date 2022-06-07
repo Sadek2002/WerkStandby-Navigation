@@ -5,6 +5,7 @@ import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Dropdown from "../src/components/Dropdown";
 import Delay from "../src/components/Delay";
+import Progression from "../src/components/Progressbar";
 
 function Stap2() {
   return (
@@ -133,9 +134,7 @@ function Stap2() {
           </div>
         </div>
 
-        <div className="progressBar">
-          <div>Work in progress</div>
-        </div>
+        <Progression datadone="50" />
       </div>
     </nav>
   );
