@@ -134,10 +134,11 @@ function Stap2() {
           </div>
         </div>
 
-        <Progression barwidth="14%" />
+        <Progression barwidth="11.1%" />
       </div>
     </nav>
   );
+  Stap1;
 }
 
 export default Stap2;

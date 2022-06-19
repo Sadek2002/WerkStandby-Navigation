@@ -7,7 +7,6 @@ body {
 }
 
 /* Stap1.js CSS */
-
 .whiteBox {
   display: inline-block;
   height: auto;
@@ -15,6 +14,7 @@ body {
   width: 1400px;
   box-shadow: 0 0 10px grey;
   margin-left: 50px;
+  margin-right: 50px;
   margin-top: 50px;
   padding-bottom: 30px;
 }
@@ -96,7 +96,7 @@ body {
   width: auto;
   height: 60px;
   float: left;
-  margin-right: 71%;
+  margin-right: 70%;
   margin-left: 4%;
   margin-top: 50px;
 }
@@ -183,15 +183,84 @@ body {
 }
 
 select#nationality {
-  margin-left: 50px;
+  margin: 00px 50px 0px 50px;
+  width: 1300px;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+  border-width: 3px;
+  border-color: lightgrey;
 }
 
-.identityButton {
+.identityBox {
   margin: 20px 50px 0px 50px;
   color: gray;
   font-size: 25px;
   font-weight: bold;
   background-color: white;
   width: 1300px;
-  height: 75px;
+  height: auto;
+  border-style: dashed;
+  border-width: 4px;
+  border-color: gray;
+  display: inline-block;
+}
+
+.identityButton {
+  margin: 20px 0px 20px 0px;
+  color: gray;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: white;
+  width: 100%;
+  border: none;
+  border-color: gray;
+  display: inline-block;
+}
+
+.uploadedImage {
+  display: block;
+  margin: 0px auto 0px auto;
+  width: 300px;
+}
+
+.imageText {
+  text-align: center;
+}
+
+/* Signature Box CSS */
+.signatureBox {
+  width: 1100px;
+  height: 200px;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.buttons {
+  background-color: #00cc8b;
+  color: white;
+  font-size: 22px;
+  border: none;
+  width: auto;
+  height: 60px;
+  margin: 0px 10px 0px auto;
+  padding: 10px 30px 10px 30px;
+  display: inline-block;
+}
+
+.trimmedImage {
+  width: 500px;
+  height: auto;
+}
+
+canvas {
+  border: 1px solid black;
+  margin: 0px 50px 30px 50px;
+  display: inline-block;
+  width: 1300px;
+  height: 200px;
+}
+
+.buttonWrapper {
+  margin-left: 50px;
 }

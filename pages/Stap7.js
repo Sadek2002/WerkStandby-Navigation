@@ -122,7 +122,7 @@ function Stap7() {
           </div>
         </div>
 
-        <Progression barwidth="85%" />
+        <Progression barwidth="66.6%" />
       </div>
     </nav>
   );

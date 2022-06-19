@@ -10,6 +10,8 @@ import Stap6 from "../pages/Stap6";
 import Stap7 from "../pages/Stap7";
 import Stap8 from "../pages/Stap8";
 import Upload from "../pages/Upload";
+import UploadAchterkant from "../pages/UploadAchterkant";
+import Handtekening from "../pages/Handtekening";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/Stap7" element={<Stap7 />} />
         <Route path="/Stap8" element={<Stap8 />} />
         <Route path="/Upload" element={<Upload />} />
+        <Route path="/UploadAchterkant" element={<UploadAchterkant />} />
+        <Route path="/Handtekening" element={<Handtekening />} />
       </Routes>
     </div>
   );

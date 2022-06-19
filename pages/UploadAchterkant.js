@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Delay from "../src/components/Delay";
 import Progression from "../src/components/Progressbar";
 
-function Upload() {
+function UploadAchterkant() {
   const [images, setImages] = React.useState([]);
   const maxNumber = 1;
 
@@ -98,7 +98,7 @@ function Upload() {
                   onClick={onImageUpload}
                   {...dragProps}
                 >
-                  Klik om je identiteitsbewijs te uploaden (Foto voorkant
+                  Klik om je identiteitsbewijs te uploaden (Foto achterkant
                   identiteitskaart)
                 </button>
 
@@ -127,10 +127,10 @@ function Upload() {
 
               <div className="flexButton">
                 <button className="whiteBoxButtonBack">
-                  <Link to="/Stap8">
+                  <Link to="/Upload">
                     <FormattedMessage
                       defaultMessage="◀&nbsp;&nbsp;&nbsp;Terug"
-                      id="Stap8_app.button"
+                      id="Stap3_app.button"
                       values={{
                         fileName: "src/App.js",
                         code: (word) => <strong>{word}</strong>
@@ -157,7 +157,7 @@ function Upload() {
                   </div>
                 </div>
               </div>
-              <Progression barwidth="88.8%" />
+              <Progression barwidth="100%" />
             </div>
           </nav>
         )}
@@ -166,4 +166,4 @@ function Upload() {
   );
 }
 
-export default Upload;
+export default UploadAchterkant;
