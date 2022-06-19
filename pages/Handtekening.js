@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import SignaturePad from "react-signature-canvas";
 import styles from "../src/styles.css";
-import modifyPdf from "../src/components/Pdf-script";
+import modifyPdf from "../src/components/Pdf-script.js";
 
 class Handtekening extends Component {
   state = { trimmedDataURL: null };
@@ -14,11 +14,8 @@ class Handtekening extends Component {
     this.setState({
       trimmedDataURL: this.sigPad.getTrimmedCanvas().toDataURL("image/png")
     });
-    const click = () =>{
-      localStorage.setItem(trimmedDataURL, trim)
-      }
   };
-  
+
   render() {
     let { trimmedDataURL } = this.state;
     return (
@@ -39,7 +36,7 @@ class Handtekening extends Component {
             <button className="buttons" onClick={this.clear}>
               Clear
             </button>
-            <button className="buttons" onClick={this.trim} {th}>
+            <button className="buttons" onClick={this.trim}>
               Trim
             </button>
           </div>
@@ -47,7 +44,10 @@ class Handtekening extends Component {
             <img className="trimmedImage" src={trimmedDataURL} alt="" />
           ) : null}
         </div>
-        <button className="buttons" onClick={modifyPdf}>Modify PDF</button>
+        <button onclick="modifyPdf()" className="buttons">
+          Modify PDF
+        </button>
+        <script />
       </div>
     );
   }

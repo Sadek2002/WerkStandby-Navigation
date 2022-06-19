@@ -248,6 +248,11 @@ select#nationality {
   display: inline-block;
 }
 
+.buttons:hover {
+  cursor: pointer;
+  background-color: #22cc3b;
+}
+
 .trimmedImage {
   width: 500px;
   height: auto;
