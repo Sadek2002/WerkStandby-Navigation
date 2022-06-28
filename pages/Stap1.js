@@ -4,6 +4,8 @@ import logo from "/img/stap1.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Dropdown from "../src/components/Dropdown";
+import Delay from "../src/components/Delay";
+import Progression from "../src/components/Progressbar";
 
 function Stap1() {
   return (
@@ -49,52 +51,54 @@ function Stap1() {
           />
         </p>
 
+        <div>
+          <img class="image-css" alt="test" src={logo}></img>
+        </div>
+
         <div className="wrapper">
-          <div>
-            <img class="image-css" alt="test" src={logo}></img>
-          </div>
+          <p className="whiteBoxSubtitle">
+            <FormattedMessage
+              defaultMessage="1. Eigen baas"
+              id="subtitle"
+              values={{
+                fileName: "src/App.js",
+                code: (word) => <strong>{word}</strong>
+              }}
+            />
+          </p>
 
-          <div className="flexbox">
-            <p className="whiteBoxSubtitle">
-              <FormattedMessage
-                defaultMessage="1. Eigen baas"
-                id="subtitle"
-                values={{
-                  fileName: "src/App.js",
-                  code: (word) => <strong>{word}</strong>
-                }}
-              />
-            </p>
-
-            <p className="whiteBoxText2">
-              <FormattedMessage
-                defaultMessage="Als vrije werker ben je een freelancer (zonder inschrijving bij de
+          <p className="whiteBoxText2">
+            <FormattedMessage
+              defaultMessage="Als vrije werker ben je een freelancer (zonder inschrijving bij de
               KvK)."
-                id="app.text2"
-                values={{
-                  fileName: "src/App.js",
-                  code: (word) => <strong>{word}</strong>
-                }}
-              />
-            </p>
+              id="app.text2"
+              values={{
+                fileName: "src/App.js",
+                code: (word) => <strong>{word}</strong>
+              }}
+            />
+          </p>
 
-            <p className="whiteBoxText2">
-              <FormattedMessage
-                defaultMessage="Je bepaalt dus zelf welke klussen je aanneemt!"
-                id="app.text3"
-                values={{
-                  fileName: "src/App.js",
-                  code: (word) => <strong>{word}</strong>
-                }}
-              />
-            </p>
-          </div>
+          <p className="whiteBoxText2">
+            <FormattedMessage
+              defaultMessage="Je bepaalt dus zelf welke klussen je aanneemt!"
+              id="app.text3"
+              values={{
+                fileName: "src/App.js",
+                code: (word) => <strong>{word}</strong>
+              }}
+            />
+          </p>
+        </div>
 
+        <div class="box">
+          <div className="emptyMargin"></div>
           <div className="flexButton">
-            <button className="whiteBoxButton">
+            <Delay />
+            <button className="whiteBoxButton" id="Button">
               <Link to="/Stap2">
                 <FormattedMessage
-                  defaultMessage="Verder"
+                  defaultMessage="Verder&nbsp;&nbsp;&nbsp;▶"
                   id="app.button"
                   values={{
                     fileName: "src/App.js",
@@ -105,9 +109,10 @@ function Stap1() {
             </button>
           </div>
         </div>
+
+        <Progression barwidth="1%" />
       </div>
     </nav>
   );
 }
-
 export default Stap1;

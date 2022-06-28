@@ -1,13 +1,13 @@
 import "../src/styles.css";
 import React from "react";
-import logo from "/img/stap2.png";
+import logo from "/img/stap6.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Dropdown from "../src/components/Dropdown";
 import Delay from "../src/components/Delay";
 import Progression from "../src/components/Progressbar";
 
-function Stap2() {
+function Stap6() {
   return (
     <nav className="container mb-4 mt-4">
       <div className="whiteBox">
@@ -19,7 +19,7 @@ function Stap2() {
 
         <p className="whiteBoxTitle">
           <FormattedMessage
-            defaultMessage="Wat je vooraf moet weten"
+            defaultMessage="Wat moet je doen"
             id="Stap2_app.title"
             values={{
               fileName: "src/App.js",
@@ -30,8 +30,7 @@ function Stap2() {
 
         <p className="whiteBoxText">
           <FormattedMessage
-            defaultMessage="De volgende punten zijn belangrijk om te weten voor je aan de slag
-            gaat als vrije werker:"
+            defaultMessage="Deze dingen moet je doen om aan het werk te kunnen als vrije werker:"
             id="Stap2_app.text1"
             values={{
               fileName: "src/App.js",
@@ -47,7 +46,7 @@ function Stap2() {
         <div className="wrapper">
           <p className="whiteBoxSubtitle">
             <FormattedMessage
-              defaultMessage="2. Vergoeding"
+              defaultMessage="2. Uren doorgeven"
               id="Stap2_subtitle"
               values={{
                 fileName: "src/App.js",
@@ -58,7 +57,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Wanneer je werkt ontvang je een vergoeding: dit is dus geen salaris of loon."
+              defaultMessage="Nadat je hebt gewerkt moet jouw opdrachtgever de gewerkte uren goedkeuren."
               id="Stap2_app.text2"
               values={{
                 fileName: "src/App.js",
@@ -69,7 +68,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Wanneer je ziek bent krijg je niet doorbetaald."
+              defaultMessage="Heb je andere uren gewerkt dan de geplande diensten."
               id="Stap2_app.text3"
               values={{
                 fileName: "src/App.js",
@@ -80,7 +79,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Ook wanneer het werk eerder stopt dan ingeplant, krijg je alleen de gewerkte uren uitbetaald."
+              defaultMessage="Dan kun je dit zelf alvast doorgeven via de app."
               id="Stap2_app.text4"
               values={{
                 fileName: "src/App.js",
@@ -91,8 +90,8 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="De vergoeding is altijd hoger dan de minimumloon"
-              id="Stap2_app.text5"
+              defaultMessage="Alle uren die voor maandag 23.59 bij ons binnen zijn, worden op woensdag uitbetaald."
+              id="Stap2_app.text4"
               values={{
                 fileName: "src/App.js",
                 code: (word) => <strong>{word}</strong>
@@ -103,10 +102,10 @@ function Stap2() {
 
         <div className="flexButton">
           <button className="whiteBoxButtonBack">
-            <Link to="/Stap1">
+            <Link to="/Stap5">
               <FormattedMessage
                 defaultMessage="◀&nbsp;&nbsp;&nbsp;Terug"
-                id="Stap1_app.button"
+                id="Stap5_app.button"
                 values={{
                   fileName: "src/App.js",
                   code: (word) => <strong>{word}</strong>
@@ -119,10 +118,10 @@ function Stap2() {
             <div className="flexButton">
               <Delay />
               <button className="whiteBoxButton">
-                <Link to="/Stap3">
+                <Link to="/Stap7">
                   <FormattedMessage
                     defaultMessage="Verder&nbsp;&nbsp;&nbsp;▶"
-                    id="Stap3_app.button"
+                    id="Stap7_app.button"
                     values={{
                       fileName: "src/App.js",
                       code: (word) => <strong>{word}</strong>
@@ -134,11 +133,10 @@ function Stap2() {
           </div>
         </div>
 
-        <Progression barwidth="11.1%" />
+        <Progression barwidth="55.5%" />
       </div>
     </nav>
   );
-  Stap1;
 }
 
-export default Stap2;
+export default Stap6;

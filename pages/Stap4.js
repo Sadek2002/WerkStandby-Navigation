@@ -1,13 +1,13 @@
 import "../src/styles.css";
 import React from "react";
-import logo from "/img/stap2.png";
+import logo from "/img/stap4.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Dropdown from "../src/components/Dropdown";
 import Delay from "../src/components/Delay";
 import Progression from "../src/components/Progressbar";
 
-function Stap2() {
+function Stap4() {
   return (
     <nav className="container mb-4 mt-4">
       <div className="whiteBox">
@@ -47,7 +47,7 @@ function Stap2() {
         <div className="wrapper">
           <p className="whiteBoxSubtitle">
             <FormattedMessage
-              defaultMessage="2. Vergoeding"
+              defaultMessage="4. Belasting"
               id="Stap2_subtitle"
               values={{
                 fileName: "src/App.js",
@@ -58,7 +58,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Wanneer je werkt ontvang je een vergoeding: dit is dus geen salaris of loon."
+              defaultMessage="Werk Standby geeft de vergoedingen die jij hebt ontvangen jaarlijks door aan de Belastingdienst."
               id="Stap2_app.text2"
               values={{
                 fileName: "src/App.js",
@@ -69,7 +69,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Wanneer je ziek bent krijg je niet doorbetaald."
+              defaultMessage="Dit jaarlijkse overzicht onvang je ook zelf en kun je gebruiken bij je inkomstenbelasting."
               id="Stap2_app.text3"
               values={{
                 fileName: "src/App.js",
@@ -80,7 +80,7 @@ function Stap2() {
 
           <p className="whiteBoxText2">
             <FormattedMessage
-              defaultMessage="Ook wanneer het werk eerder stopt dan ingeplant, krijg je alleen de gewerkte uren uitbetaald."
+              defaultMessage="Je hoeft dus zelf geen BTW aangifte te doen."
               id="Stap2_app.text4"
               values={{
                 fileName: "src/App.js",
@@ -89,24 +89,15 @@ function Stap2() {
             />
           </p>
 
-          <p className="whiteBoxText2">
-            <FormattedMessage
-              defaultMessage="De vergoeding is altijd hoger dan de minimumloon"
-              id="Stap2_app.text5"
-              values={{
-                fileName: "src/App.js",
-                code: (word) => <strong>{word}</strong>
-              }}
-            />
-          </p>
+          <div className="emptyMargin"></div>
         </div>
 
         <div className="flexButton">
           <button className="whiteBoxButtonBack">
-            <Link to="/Stap1">
+            <Link to="/Stap3">
               <FormattedMessage
                 defaultMessage="◀&nbsp;&nbsp;&nbsp;Terug"
-                id="Stap1_app.button"
+                id="Stap3_app.button"
                 values={{
                   fileName: "src/App.js",
                   code: (word) => <strong>{word}</strong>
@@ -119,10 +110,10 @@ function Stap2() {
             <div className="flexButton">
               <Delay />
               <button className="whiteBoxButton">
-                <Link to="/Stap3">
+                <Link to="/Stap5">
                   <FormattedMessage
                     defaultMessage="Verder&nbsp;&nbsp;&nbsp;▶"
-                    id="Stap3_app.button"
+                    id="Stap5_app.button"
                     values={{
                       fileName: "src/App.js",
                       code: (word) => <strong>{word}</strong>
@@ -134,11 +125,10 @@ function Stap2() {
           </div>
         </div>
 
-        <Progression barwidth="11.1%" />
+        <Progression barwidth="33.3%" />
       </div>
     </nav>
   );
-  Stap1;
 }
 
-export default Stap2;
+export default Stap4;
